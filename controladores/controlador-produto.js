@@ -4,10 +4,11 @@ const fs = require('fs')
 
 
 const listProdutos = async (req,res) => {
+    console.log(req.cookies)
     var produtos = db.produtos
     res.json(produtos)
 }
-const getProduto = async (req, res) => {
+const Produto = async (req, res) => {
     const _id = req.params.id
     const lista_produtos = db.produtos
     const produto = lista_produtos.find(

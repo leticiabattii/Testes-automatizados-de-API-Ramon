@@ -7,7 +7,7 @@ const listClientes = async (req,res) => {
     var clientes = db.clientes
     res.json(clientes)
 }
-const getClientes = async (req, res) => {
+const Clientes = async (req, res) => {
     const _id = req.params.id
     const lista_clientes = db.clientes
     const cliente = lista_clientes.find(
