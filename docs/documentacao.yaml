@@ -147,7 +147,7 @@ paths:
       summary: Criar um novo cliente
       requestBody:
         required: true
-        content:
+        content:j
           application/json:
             schema:
               type: object
